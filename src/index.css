@@ -126,7 +126,7 @@ header form {
 	display: flex;
 	align-items: center;
 	gap: 15px;
-
+	margin-right: 25px;
 	margin-bottom: 20px;
 	cursor: pointer;
 }
@@ -139,8 +139,10 @@ header form {
 
 /* Card List Pokemon */
 .card-list-pokemon {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -182,13 +184,6 @@ header form {
 	display: flex;
 	gap: 10px;
 	margin-top: 10px;
-}
-
-.card-types span {
-	font-size: 12px;
-	padding: 5px 20px;
-	border-radius: 5px;
-	color: #fff;
 }
 
 /* Types of Pokemon */

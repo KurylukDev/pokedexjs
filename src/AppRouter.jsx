@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from './pages/Home'
-import { PokemonDetail } from './pages/PokemonDetail'
+import { PokemonDetailPage } from './pages/PokemonDetail'
 import { SearchPage } from './pages/SearchPage'
 import { Navigation } from './components/Navigation'
 
@@ -10,7 +10,7 @@ export const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Navigation />}>
             <Route index element={<Home />}/>
-            <Route path="pokemon/:id" element={<PokemonDetail />}/>
+            <Route path="pokemon/:id" element={<PokemonDetailPage />}/>
             <Route path="search"  element={<SearchPage />}/>
         </Route>
 

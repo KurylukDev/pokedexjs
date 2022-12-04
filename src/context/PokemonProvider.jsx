@@ -20,7 +20,7 @@ export const PokemonProvider = ({children}) => {
     const [active, setActive] = useState(false)
 
  // llamar 50 pokemones a la API
-    const getAllPokemons = async(limit = 50) =>{
+    const getAllPokemons = async(limit = 25) =>{
         const baseURL = 'https://pokeapi.co/api/v2/'
 
         const res = await fetch(`${baseURL}pokemon?limit=${limit}&offset=${offset}`)

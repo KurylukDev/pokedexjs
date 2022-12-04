@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { PokemonContext } from '../context/PokemonContext'
-import {CardPokemon} from './CardPokemon'
+import {CardPokemon} from './pokemonCard/CardPokemon'
 import { Loader } from './Loader.jsx'
 
 export const PokemonList = () => {
