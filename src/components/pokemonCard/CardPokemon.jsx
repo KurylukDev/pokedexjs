@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 export const CardPokemon = ({pokemon}) => {
 
-	const backgroundSelected = background[pokemon.types[0].type.name];
+	const backgroundSelected = background[pokemon.types[0].type.name]
 
   return (
 		<Link to={`/pokemon/${pokemon.id}`} className={styles.pokeCard}>

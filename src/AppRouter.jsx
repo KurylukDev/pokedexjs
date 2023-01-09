@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from './pages/Home'
-import { PokemonDetailPage } from './pages/PokemonDetail'
+import { PokemonDetailPage } from './pages/PokemonDetailPage'
 import { SearchPage } from './pages/SearchPage'
 import { Navigation } from './components/Navigation'
 

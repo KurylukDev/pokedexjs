@@ -5,7 +5,7 @@ import { PokemonContext } from '../../context/PokemonContext';
 import { primerMayuscula } from '../../helper/helper';
 import { background } from '../../helper/BackgroundByType'
 
-export const PokemonDetail = () => {
+export const PokemonDetail = ({pokemon}) => {
 	const { getPokemonByID } = useContext(PokemonContext);
 
 	const [loading, setLoading] = useState(true);
@@ -23,7 +23,7 @@ export const PokemonDetail = () => {
 		fetchPokemon(id);
 	}, []);
 
-	const backgroundSelected = background[pokemon?.types[0]?.type?.name];
+	const backgroundSelected = background[pokemon.types[0].type.name];
 
 	return (
 		<main style={{ background: backgroundSelected }} className='container main-pokemon'>
